@@ -9,28 +9,28 @@ resource "aws_db_instance" "mysql" {
   engine               = "mysql"
   engine_version       = "5.7"
   instance_class       = "db.t2.micro"
-  name                 = "mydb"
-  username             = "myuser"
-  password             = "mypassword"
+  name                 = "hackaton"
+  username             = "user"
+  password             = "password"
 }
 
 # Resource - ECR
 resource "aws_ecr_repository" "my_repo" {
-  name = "my_repo"
+  name = "hackaton_repo"
 }
 
 # Resource - ECS
 resource "aws_ecs_cluster" "my_cluster" {
-  name = "my_cluster"
+  name = "hackaton_cluster"
 }
 
 # Resource - API Gateway
 resource "aws_api_gateway_rest_api" "my_api" {
-  name        = "my_api"
+  name        = "hckaton_api"
   description = "My API Gateway REST API"
 }
 
 # Resource - S3
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "my_bucket"
+  bucket = "hackaton_bucket"
 }
