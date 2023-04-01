@@ -31,6 +31,6 @@ resource "aws_api_gateway_rest_api" "hackaton_api" {
 }
 
 # Resource - S3
-resource "aws_s3_bucket" "hackaton_bucket-terraform-us-east-1-919667385309" {
-  bucket = "hackaton_bucket-terraform-us-east-1-919667385309"
+resource "aws_s3_bucket" "hackaton-bucket-12345" {
+  bucket = "hackaton-bucket-12345"
 }
