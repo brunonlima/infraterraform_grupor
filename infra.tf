@@ -14,7 +14,7 @@ resource "aws_db_instance" "mysql" {
   password             = "password"
 }
 
-# Resource - ECR
+# Resource - ECR#
 resource "aws_ecr_repository" "hackaton_repo" {
   name = "hackaton_repo"
 }
@@ -31,6 +31,6 @@ resource "aws_api_gateway_rest_api" "hackaton_api" {
 }
 
 # Resource - S3
-resource "aws_s3_bucket" "hackaton_bucket" {
-  bucket = "hackaton_bucket"
+resource "aws_s3_bucket" "hackaton_bucket-terraform-us-east-1-919667385309" {
+  bucket = "hackaton_bucket-terraform-us-east-1-919667385309"
 }
