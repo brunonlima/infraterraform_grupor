@@ -15,22 +15,22 @@ resource "aws_db_instance" "mysql" {
 }
 
 # Resource - ECR
-resource "aws_ecr_repository" "my_repo" {
+resource "aws_ecr_repository" "hackaton_repo" {
   name = "hackaton_repo"
 }
 
 # Resource - ECS
-resource "aws_ecs_cluster" "my_cluster" {
+resource "aws_ecs_cluster" "hackaton_cluster" {
   name = "hackaton_cluster"
 }
 
 # Resource - API Gateway
-resource "aws_api_gateway_rest_api" "my_api" {
-  name        = "hckaton_api"
+resource "aws_api_gateway_rest_api" "hackaton_api" {
+  name        = "hackaton_api"
   description = "My API Gateway REST API"
 }
 
 # Resource - S3
-resource "aws_s3_bucket" "my_bucket" {
+resource "aws_s3_bucket" "hackaton_bucket" {
   bucket = "hackaton_bucket"
 }
